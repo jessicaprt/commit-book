@@ -5,8 +5,8 @@
         <input-searchbar
             (onSearchMode)="onSearchEvent($event)">
         </input-searchbar>
-        <user-search 
-            [ngClass]="checkSearchModeForSearchResults()"
-            [searchedUsername]="getSearchedUsername()"></user-search>
     </div>
+    <user-search 
+        [ngClass]="checkSearchModeForSearchResults()"
+        [searchedUsername]="getSearchedUsername()"></user-search>
 </div>

@@ -1,5 +1,19 @@
 /deep/ .search-item {
+    text-align: left;
+    @include sans-serif;
+    padding: 2vh 0;
+    border-bottom: 1px solid #000;
+
+    li {
+        list-style: none;
+        display: inline-flex;
+    }
     /deep/ .search-item-image {
-        width: 40px;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+    }
+    /deep/ .search-item-username {
+        font-size: 1.5em;
     }
 }

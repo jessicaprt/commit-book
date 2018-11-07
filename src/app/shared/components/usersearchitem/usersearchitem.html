@@ -1,4 +1,14 @@
-<div class="search-item">
-    <img [ngClass]="'search-item-image'" [src]="imageUrl">
-    {{ username }}
+<div class="search-item container">
+    <div class="row">
+        <ul>
+            <li>
+                <span>
+                    <img [ngClass]="'search-item-image'" [src]="imageUrl">
+                </span></li>
+            <li><span [ngClass]="'search-item-username'">
+                    <p>{{ username }}</p>
+                </span></li>
+        </ul>
+        
+    </div>
 </div>
