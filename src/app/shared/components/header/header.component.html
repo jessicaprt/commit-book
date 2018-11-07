@@ -2,8 +2,11 @@
     <div [ngClass]="checkSearchMode()">
         <p [ngClass]="checkSearchModeForTitle()">{{ title }}</p>
         <p [ngClass]="checkSearchModeForSubtitle()">{{ subtitle }}</p>
-        <searchbar
+        <input-searchbar
             (onSearchMode)="onSearchEvent($event)">
-        </searchbar>
+        </input-searchbar>
+        <user-search 
+            [ngClass]="checkSearchModeForSearchResults()"
+            [searchedUsername]="getSearchedUsername()"></user-search>
     </div>
 </div>

@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  name : string = "Instagram Browser";
   
-  setName(newName : string) {
-    this.name = newName;
-  }
 }

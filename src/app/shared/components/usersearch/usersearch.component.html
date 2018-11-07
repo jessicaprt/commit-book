@@ -1,0 +1,7 @@
+<div [ngClass]="'user-search-results'">
+    <div *ngFor="let user of allUsers">
+        <user-search-item
+            [username]="user['login']"
+            [imageUrl]="user['avatar_url']"></user-search-item>
+    </div>
+</div>

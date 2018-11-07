@@ -1,13 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'header',
-  templateUrl: './layout/header.component.html'
+  templateUrl: './header.component.html'
 })
 
 export class HeaderComponent {
-  title = "InstaBrowser";
-  subtitle = "for Instagram";
+  title = "GitFeed";
+  subtitle = "for GitHub";
   username : string;
   searchStatus = false;
 
@@ -19,18 +19,27 @@ export class HeaderComponent {
   checkSearchMode() {
     if (this.searchStatus)
       return 'header-title-container-small';
-    else return 'header-title-container-big';
+    return 'header-title-container-big';
   }
 
   checkSearchModeForTitle() {
     if (this.searchStatus)
       return 'header-title-small';
-    else return 'header-title-big';
+    return 'header-title-big';
   }
 
   checkSearchModeForSubtitle() {
     if (this.searchStatus) 
       return 'header-subtitle-small';
-    else return 'header-subtitle-big';
+    return 'header-subtitle-big';
+  }
+  checkSearchModeForSearchResults() {
+    if (this.searchStatus)
+      return 'show-results';
+    return 'hide-results';
+  }
+
+  getSearchedUsername() {
+    return this.username;
   }
 }
