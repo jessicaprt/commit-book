@@ -3,12 +3,32 @@
     @include cursive;
     padding: 3vh 0;
     color: #fff;
-    
-    /deep/ .header-title {    
-        font-size: 8vh;
+
+    /deep/ .header-title-container-big {
+        height: 100vh;
+        background-color: $colorDark;
     }
 
-    /deep/ .header-subtitle {
-        font-size: 3vh;
+    /deep/ .header-title-container-small {
+        background-color: $colorDark;
+        padding: 2.5vh 0;
+    }
+    
+    /deep/ .header-title-big {    
+        font-size: 4em;
+        padding-top: 30%;
+    }
+
+    /deep/ .header-title-small {
+        font-size: 2.5em;
+    }
+
+    /deep/ .header-subtitle-big {
+        font-size: 2em;
+    }
+
+    /deep/ .header-subtitle-small {
+        font-size: 1em;
     }
 }
+
