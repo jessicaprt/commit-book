@@ -1,0 +1,14 @@
+:host {
+    text-align: center;
+    @include cursive;
+    padding: 3vh 0;
+    color: #fff;
+    
+    /deep/ .header-title {    
+        font-size: 8vh;
+    }
+
+    /deep/ .header-subtitle {
+        font-size: 3vh;
+    }
+}

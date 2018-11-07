@@ -3,8 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./shared/scss/main.scss']
 })
+
 export class AppComponent {
-  title = 'spoonity-challenge';
+  name : string = "Instagram Browser";
+  
+  setName(newName : string) {
+    this.name = newName;
+  }
 }

@@ -1,0 +1,11 @@
+/deep/ .searchbar {
+    margin: 3vh; 
+
+    /deep/ .search-input {
+        padding: 1vh 2vh;
+        width: 60vmin;
+        border-radius: 8px;
+        font-size: 1.3em;
+        color: $colorDarker;
+    }
+}

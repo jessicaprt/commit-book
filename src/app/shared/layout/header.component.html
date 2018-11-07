@@ -1,0 +1,10 @@
+<div [ngClass]="'header'">
+    <div [ngClass]="'header-title-container'">
+        <p [ngClass]="'header-title'">{{ title }}</p>
+        <p [ngClass]="'header-subtitle'">{{ subtitle }}</p>
+        <searchbar
+            (onSearchMode)="onSearchEvent($event)">
+        </searchbar>
+        <p>user: {{ username }}</p>
+    </div>
+</div>
