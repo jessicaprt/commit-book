@@ -5,6 +5,7 @@
         padding: 1vh 2vh;
         width: 60vmin;
         border-radius: 8px;
+        border: 2px solid $colorDarker;
         font-size: 1.3em;
         color: $colorDarker;
         @include sans-serif;
