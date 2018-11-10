@@ -1,13 +1,25 @@
 /deep/ .searchbar {
     margin: 3vh; 
 
-    /deep/ .search-input {
+    input {
         padding: 1vh 2vh;
         width: 60vmin;
         border-radius: 8px;
-        border: 2px solid $colorDarker;
         font-size: 1.3em;
         color: $colorDarker;
         @include sans-serif;
+    }
+
+    .search-input {
+        border: 2px solid $colorDarker;
+    }
+
+    .search-input-error {
+        border: 2px solid $errorColor;
+    }
+
+    .error-text {
+        color: $errorColor;
+        font-weight: bold;
     }
 }

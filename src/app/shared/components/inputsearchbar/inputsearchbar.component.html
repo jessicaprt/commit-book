@@ -1,8 +1,15 @@
 <div class="searchbar">
-    <input 
-        type="text" 
-        [(ngModel)]="searchedUsername"
-        (input)="onSearchTrigger()"
-        class="search-input"
-        placeholder="search GitHub username">    
+    <form
+        [formGroup]="form">
+        <input 
+            formControlName="username" 
+            placeholder="search Github username"
+            [ngClass]="getInputClass()"
+            type="text" 
+            [(ngModel)]="searchedUsername"
+            (input)="onSearchTrigger()">
+
+        <div *ngIf="username.invalid"
+            class="error-text">Type at least 4 characters</div>
+    </form>
 </div>

@@ -22,12 +22,16 @@ export class UserSearchComponent implements OnChanges {
     }
 
     showUsers() {
-        this.userService.getUserSearchResult(this.searchedUsername)
+        if (this.searchedUsername != null && this.searchedUsername.length >=4) {
+            this.userService.getUserSearchResult(this.searchedUsername)
             .subscribe(
                 (data) => { 
                     this.allUsers = data["items"] },
                 error => this.error = error
             );
-        console.log(this.allUsers);
+            console.log(this.allUsers);
+        } else {
+            this.allUsers = null;
+        }
     }
 }
