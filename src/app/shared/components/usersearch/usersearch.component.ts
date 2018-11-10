@@ -1,6 +1,5 @@
 import { Component, Input, OnChanges } from '@angular/core';
 import { UserService } from '../../services/user.service';
-import { UserModel, AllUsers } from '../../models/user.model';
 
 @Component({
   selector: 'user-search',
@@ -10,12 +9,11 @@ import { UserModel, AllUsers } from '../../models/user.model';
 
 export class UserSearchComponent implements OnChanges {
     error : any;
-    user : UserModel;
     searchUser : string;
-    allUsers : AllUsers;
+    allUsers : any;
     
 
-    constructor(private userService : UserService) {}
+    constructor(private  userService : UserService) {}
 
     @Input() searchedUsername : string;
 
@@ -24,12 +22,12 @@ export class UserSearchComponent implements OnChanges {
     }
 
     showUsers() {
-        console.log("searching for username: " + this.searchedUsername);
         this.userService.getUserSearchResult(this.searchedUsername)
             .subscribe(
-                (data:AllUsers) => { 
+                (data) => { 
                     this.allUsers = data["items"] },
                 error => this.error = error
             );
+        console.log(this.allUsers);
     }
 }

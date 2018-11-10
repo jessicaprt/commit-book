@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 
 export class HeaderComponent {
-  title = "GitFeed";
+  title = "CommitBook";
   subtitle = "for GitHub";
   username : string;
   searchStatus = false;

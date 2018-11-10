@@ -1,0 +1,35 @@
+<div class="user-page">
+    <div class = "name-header">
+        <div class="header-bar">
+            <a href="/"><h3 class="title">GitFeed for Github</h3></a>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="row">
+                    <div class = "image-wrapper col-md-3 offset-md-3">
+                        <img [src] = "image_url$">
+                    </div></div></div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 username">
+                        <h2>{{ user$ }}</h2>
+                        <p>{{ location$ }}</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="commits container">
+        <h3>Showing the most recent public commits: </h3>
+        <ul>
+            <div *ngFor="let commit of commits" class="commit">
+                <p class="commit-contribution"><span>contributed to </span> <span class="repo-name">{{ commit.repo }}</span></p>
+                <h5 *ngFor="let message of commit.messages" class="commit-messages">"{{ message }}"</h5>
+                <p class="date">{{ commit.createdAt | date }}</p>
+
+            </div>
+        </ul>
+    </div>
+</div>
