@@ -6,14 +6,12 @@
         height: 100vh;
         background-color: $colorDark;    
         text-align: center;
-        @include cursive;
     }
 
     /deep/ .header-title-container-small {
         background-color: $colorHighlight;
         padding: 2.5vh 0;    
         text-align: center;
-        @include cursive;
     }
     
     /deep/ .header-title-big {    
@@ -28,13 +26,13 @@
     }
 
     /deep/ .header-subtitle-big {
-        font-size: 2em;
-        @include cursive;
+        font-size: 1.5em;
+        @include sans-serif;
     }
 
     /deep/ .header-subtitle-small {
         font-size: 1em;
-        @include cursive;
+        @include sans-serif;
     }
 }
 

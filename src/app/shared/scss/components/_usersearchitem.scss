@@ -4,14 +4,21 @@
     padding: 2vh 0;
     border-bottom: 1.3px solid rgba(0,0,0,0.3);
 
-    :hover {
+    a {
+        color: $colorHighlight;
+    }
+
+    a:hover {
         background-color: $colorHighlightLight;
+        color: #fff;
+        text-decoration: none;
     }
 
     li {
         list-style: none;
         display: inline-flex;
     }
+    
     /deep/ .search-item-image {
         width: 100px;
         height: 100px;
