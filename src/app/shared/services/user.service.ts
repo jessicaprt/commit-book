@@ -17,7 +17,7 @@ export class UserService {
         if(searchedName != "") {
             this.githubUrl = "https://api.github.com/search/users?q=" + searchedName 
                 + "&client_id=" + client_id 
-                + "&client_secret" + client_secret;
+                + "&client_secret=" + client_secret;
 
             return this.http.get(this.githubUrl);
         }        
