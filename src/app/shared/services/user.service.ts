@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { UserModel } from '../models/user.model';
 
-const ACCESS_TOKEN = "e316b594b3e0d8bc033d58b64457f7d548b7b041";
+const ACCESS_TOKEN = "1239bbf2046fe6af19bd3cea7dbff9716d16c4df";
 
 @Injectable()
 export class UserService {
