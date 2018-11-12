@@ -33,7 +33,9 @@
     "node-sass": "^4.10.0",
     "path": "^0.12.7",
     "rxjs": "^6.3.3",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "@angular/cli": "^7.0.5",
+    "@angular/compiler-cli": "^7.0.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
