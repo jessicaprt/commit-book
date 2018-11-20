@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'header',
-  templateUrl: './header.component.html'
+  selector: 'header-section',
+  templateUrl: './headersection.component.html'
 })
 
-export class HeaderComponent {
+export class HeaderSectionComponent {
   title = "CommitBook";
   subtitle = "for GitHub";
   username : string;

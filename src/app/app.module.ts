@@ -8,7 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './shared/components/landingpage/landingpage.component';
-import { HeaderComponent } from './shared/components/header/header.component';
+import { HeaderSectionComponent } from './shared/components/headersection/headersection.component';
 import { InputSearchbarComponent } from './shared/components/inputsearchbar/inputsearchbar.component';
 import { UserSearchComponent } from './shared/components/usersearch/usersearch.component';
 import { UserSearchItemComponent } from './shared/components/usersearchitem/usersearchitem.component';
@@ -18,7 +18,7 @@ import { UserPageComponent } from './shared/components/userpage/userpage.compone
   declarations: [
     AppComponent,
     LandingPageComponent,
-    HeaderComponent,
+    HeaderSectionComponent,
     InputSearchbarComponent,
     UserSearchComponent,
     UserSearchItemComponent,
